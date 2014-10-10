@@ -1,0 +1,5 @@
+acme_mission:
+    resource: "@AcmeMissionBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
