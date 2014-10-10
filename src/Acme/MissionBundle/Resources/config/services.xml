@@ -6,11 +6,11 @@
 
     <!--
     <parameters>
-        <parameter key="acme_mission.example.class">Acme\MissionBundle\Example</parameter>
+        <parameter key="mission.example.class">Acme\MissionBundle\Example</parameter>
     </parameters>
 
     <services>
-        <service id="acme_mission.example" class="%acme_mission.example.class%">
+        <service id="mission.example" class="%mission.example.class%">
             <argument type="service" id="service_id" />
             <argument>plain_value</argument>
             <argument>%parameter_name%</argument>

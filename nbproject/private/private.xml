@@ -3,8 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/symphonyPortail/src/Acme/MissionBundle/Controller/IndexController.php</file>
-            <file>file:/C:/wamp/www/symphonyPortail/src/Acme/MissionBundle/Resources/views/Index/index.html.twig</file>
+            <file>file:/home/sio/public_html/symphonyPortail/src/Acme/DemoBundle/Resources/views/layout.html.twig</file>
+            <file>file:/home/sio/public_html/symphonyPortail/src/Acme/MissionBundle/Resources/views/layout.html.twig</file>
+            <file>file:/home/sio/public_html/symphonyPortail/src/Acme/MissionBundle/Controller/DefaultController.php</file>
+            <file>file:/home/sio/public_html/symphonyPortail/web/bundles/acmemission/css/style.css</file>
+            <file>file:/home/sio/public_html/symphonyPortail/src/Acme/DemoBundle/Resources/views/Demo/hello.html.twig</file>
+            <file>file:/home/sio/public_html/symphonyPortail/src/Acme/MissionBundle/Resources/views/Default/index.html.twig</file>
         </group>
     </open-files>
 </project-private>
