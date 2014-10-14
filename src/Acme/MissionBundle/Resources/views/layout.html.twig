@@ -4,15 +4,64 @@
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
-            <link rel="stylesheet" href="{{ asset('bundles/acmemission/css/style.css') }}" />
             <link rel="stylesheet" href="{{ asset('bundles/acmemission/css/bootstrap.css') }}" />
             <link rel="stylesheet" href="{{ asset('bundles/acmemission/css/font-awesome.css') }}" />
+            <link rel="stylesheet" href="{{ asset('bundles/acmemission/css/style.css') }}" />
         {% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
         {% block body %}
+<div id="wrapper">
+    <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">BTS SIO</a>
+        </div>
+        <div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;">
+            Une production SIO du lycée Léonard de Vinci - Melun (77) &nbsp;
+            <!-- a href="#" class="btn btn-danger square-btn-adjust">Login</a -->
+        </div>
+    </nav>
+        <!-- /. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li class="text-center"><img src="{{ asset('bundles/acmemission/img/logo-ldv.png') }}" class="logo-image img-responsive" /></li>
+                <li><a class="active-menu" href="#" onclick="insertContentPage('intro.php');return false;">
+                    <i class="fa fa-dashboard fa-3x"></i> Index</a></li>
+                <li><a href="#"onclick="insertContentPage('partionneur.php');return false;">
+                    <i class="fa fa-group fa-3x"></i> Générateur de groupes</a></li>
+                <li><a href="#" onclick="insertContentPage('vide.php');return false;">
+                    <i class="fa fa-edit fa-3x"></i> [...] </a></li>
+            </ul>
+        </div>
+    </nav>
+        <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+        <div id="page-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    {% block content %}
+                    {% endblock %}
+                </div> <!-- col -->
+            </div> <!-- row -->
+        </div> <!-- /. PAGE INNER  -->
+    </div> <!-- /. PAGE WRAPPER  -->
+</div> <!-- /. WRAPPER  -->
         {% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('bundles/acmemission/js/jquery-1.11.1.min.js') }}"></script>
+            <!-- BOOTSTRAP SCRIPTS -->
+            <script src="{{ asset('bundles/acmemission/js/bootstrap.min.js') }}"></script>
+            <!-- METISMENU SCRIPTS -->
+            <script src="{{ asset('bundles/acmemission/js/jquery.metisMenu.js') }}"></script>
+            <!-- CUSTOM SCRIPTS -->
+            <script src="assets/js/custom.js"></script>
+        {% endblock %}
     </body>
 </html>
