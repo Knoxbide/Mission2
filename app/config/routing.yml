@@ -2,4 +2,8 @@ mission:
     resource: "@MissionBundle/Controller/"
     type:     annotation
     prefix:   /
-
+    
+_partionneur:
+    pattern:  /mission/partionneur
+    defaults: { _controller: MissionBundle:Default:partionneur }
+    

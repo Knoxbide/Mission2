@@ -16,4 +16,13 @@ class DefaultController extends Controller
     {
         return array();
     }
+    
+    /**
+     * @Route("/partionneur/")
+     * @Template()
+     */
+    public function partionneurAction()
+    {
+        return array();
+    }
 }

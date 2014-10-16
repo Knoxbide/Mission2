@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: /home/sio/public_html/symphonyPortail/app/config/routing_dev.yml
+    resource: 'C:/wamp/www/Mission2/app/config/routing_dev.yml'
