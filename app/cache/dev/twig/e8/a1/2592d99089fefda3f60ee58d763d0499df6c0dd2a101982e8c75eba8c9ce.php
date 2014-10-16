@@ -38,20 +38,17 @@ class __TwigTemplate_e8a12592d99089fefda3f60ee58d763d0499df6c0dd2a101982e8c75eba
         // line 6
         echo "    ";
         $this->displayParentBlock("body", $context, $blocks);
-        echo "
-    ";
-        // line 7
-        $this->displayBlock('content', $context, $blocks);
     }
 
+    // line 7
     public function block_content($context, array $blocks = array())
     {
         // line 8
         echo "        <div class=\"row\">
             <div class=\"col-md-12\">
                 <h2>Bienvenue dans cet espace des applications de la section SIO !</h2>
-            </div> <!-- col -- >
-        </div> <!-- /. ROW  -->
+            </div>
+        </div>
     ";
     }
 
@@ -67,6 +64,6 @@ class __TwigTemplate_e8a12592d99089fefda3f60ee58d763d0499df6c0dd2a101982e8c75eba
 
     public function getDebugInfo()
     {
-        return array (  50 => 8,  44 => 7,  39 => 6,  36 => 5,  30 => 3,);
+        return array (  47 => 8,  44 => 7,  39 => 6,  36 => 5,  30 => 3,);
     }
 }

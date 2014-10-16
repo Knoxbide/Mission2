@@ -153,9 +153,21 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Acme\\MissionBundle\\Controller\\DefaultController::partionneurAction',  '_route' => 'acme_mission_default_partionneur',);
         }
 
-        // _partionneur
-        if ($pathinfo === '/mission/partionneur') {
-            return array (  '_controller' => 'Acme\\MissionBundle\\Controller\\DefaultController::partionneurAction',  '_route' => '_partionneur',);
+        if (0 === strpos($pathinfo, '/mission')) {
+            // _partionneur
+            if ($pathinfo === '/mission/partionneur') {
+                return array (  '_controller' => 'Acme\\MissionBundle\\Controller\\DefaultController::partionneurAction',  '_route' => '_partionneur',);
+            }
+
+            // _index
+            if (rtrim($pathinfo, '/') === '/mission') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', '_index');
+                }
+
+                return array (  '_controller' => 'Acme\\MissionBundle\\Controller\\DefaultController::indexAction',  '_route' => '_index',);
+            }
+
         }
 
         // _welcome

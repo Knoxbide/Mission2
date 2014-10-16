@@ -7,3 +7,7 @@ _partionneur:
     pattern:  /mission/partionneur
     defaults: { _controller: MissionBundle:Default:partionneur }
     
+_index:
+    pattern:  /mission/
+    defaults: { _controller: MissionBundle:Default:index }
+    
